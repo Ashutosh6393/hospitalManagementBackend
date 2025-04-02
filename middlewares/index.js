@@ -1,3 +1,3 @@
-import { logRequest } from "./logRequests";
+import { logRequest } from "./logRequests.js";
 
 export { logRequest };

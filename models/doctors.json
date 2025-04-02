@@ -1,0 +1,8 @@
+[
+    {
+       "doctorId": "1",
+       "doctorName": "Dr. John Doe",
+       "specialization": "Cardiologist",
+       "hospital": "Hospital A"
+    }
+]

@@ -1,16 +1,16 @@
-import { getAllAppointments } from "./appointments/getAllAppointments";
-import { getAppointmentById } from "./appointments/getAppointmentById";
-import { deletePatientById } from "./patients/deletePatientById";
-import { updatePatientById } from "./patients/updatePatientById";
-import { bookAppointment } from "./appointments/bookAppointment";
-import { deleteDoctorById } from "./doctors/deleteDoctorById";
-import { updateDoctorById } from "./doctors/updateDoctorById";
-import { getAllPatients } from "./patients/getAllPatients";
-import { getPatientById } from "./patients/getPatientById";
-import { addNewPatient } from "./patients/addNewPatient";
-import { getAllDoctors } from "./doctors/getAllDoctors";
-import { getDoctorById } from "./doctors/getDoctorById";
-import { addNewDoctor } from "./doctors/addNewDoctor";
+import { getAllAppointments } from "./appointments/getAllAppointments.js";
+import { getAppointmentById } from "./appointments/getAppointmentById.js";
+import { deletePatientById } from "./patients/deletePatientById.js";
+import { updatePatientById } from "./patients/updatePatientById.js";
+import { bookAppointment } from "./appointments/bookAppointment.js";
+import { deleteDoctorById } from "./doctors/deleteDoctorById.js";
+import { updateDoctorById } from "./doctors/updateDoctorById.js";
+import { getAllPatients } from "./patients/getAllPatients.js";
+import { getPatientById } from "./patients/getPatientById.js";
+import { addNewPatient } from "./patients/addNewPatient.js";
+import { getAllDoctors } from "./doctors/getAllDoctors.js";
+import { getDoctorById } from "./doctors/getDoctorById.js";
+import { addNewDoctor } from "./doctors/addNewDoctor.js";
 
 export {
   deletePatientById,

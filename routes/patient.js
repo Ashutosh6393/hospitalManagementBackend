@@ -5,7 +5,7 @@ import {
   getAllPatients,
   getPatientById,
   deletePatientById,
-} from "../controllers";
+} from "../controllers/index.js";
 
 const router = Router();
 
@@ -16,3 +16,5 @@ router
   .get(getPatientById)
   .put(updatePatientById)
   .delete(deletePatientById);
+
+export default router;

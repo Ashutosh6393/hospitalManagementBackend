@@ -1,5 +1,10 @@
 import express from "express";
-import { logRequest } from "./middlewares";
+import path from "path";
+import { logRequest } from "./middlewares/index.js";
+
+import patientRouter from "./routes/patient.js";
+
+import doctorRouter from "./routes/doctor.js";
 
 
 const app = express();
@@ -15,7 +20,7 @@ app.use(logRequest);
 
 app.use('/patient', patientRouter);
 app.use('/doctor', doctorRouter);
-app.use('/appointments', appointmentsRouter);
+// app.use('/appointments', appointmentsRouter);
 
 
 
