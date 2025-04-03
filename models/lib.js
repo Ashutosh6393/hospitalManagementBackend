@@ -24,3 +24,21 @@ export const writePatientData = async (patients) => {
     throw new Error(`Error writing patient data: ${error.message}`);
   }
 };
+
+export const readDoctorData = async () => {
+  try {
+    const data = await fs.readFile(doctorDataPath, "utf8");
+    return data;
+  } catch (error) {
+    throw new Error(`Error reading doctor data: ${error.message}`);
+  }
+};
+
+export const writeDoctorData = async (doctor) => {
+  try {
+    await fs.writeFile(doctorDataPath, JSON.stringify(doctor, null, 2));
+    return { status: "success", message: "Doctors data updated successfully" };
+  } catch (error) {
+    throw new Error(`Error writing doctor data: ${error.message}`);
+  }
+};

@@ -1,8 +1,14 @@
 [
-    {
-       "doctorId": "1",
-       "doctorName": "Dr. John Doe",
-       "specialization": "Cardiologist",
-       "hospital": "Hospital A"
-    }
+  {
+    "doctorId": "1",
+    "doctorName": "Dr. John Doe",
+    "specialization": "Cardiologist",
+    "hospital": "Hospital A"
+  },
+  {
+    "doctorId": "2",
+    "doctorName": "ashutosh",
+    "specialization": "Cardiologist",
+    "hospital": "Hospital A"
+  }
 ]
