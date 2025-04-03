@@ -42,3 +42,27 @@ export const writeDoctorData = async (doctor) => {
     throw new Error(`Error writing doctor data: ${error.message}`);
   }
 };
+
+export const readAppointmentData = async () => {
+  try {
+    const data = await fs.readFile(appointmentsDataPath, "utf8");
+    return data;
+  } catch (error) {
+    throw new Error(`Error reading appointment data: ${error.message}`);
+  }
+};
+
+export const writeAppointmentData = async (data) => {
+  try {
+    await fs.writeFile(
+      appointmentsDataPath,
+      JSON.stringify(data, null, 2)
+    );
+    return {
+      status: "success",
+      message: "Appointments data updated successfully",
+    };
+  } catch (error) {
+    throw new Error(`Error wrting appointment data: ${error.message}`);
+  }
+};

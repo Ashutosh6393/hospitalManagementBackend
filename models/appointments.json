@@ -1,9 +1,16 @@
 [
-    {
-        "appointmentId": "1",
-        "patientId": "1",
-        "doctorId": "1",
-        "date": "2022-01-01",
-        "time": "10:00 AM"
-    }
+  {
+    "appointmentId": "1",
+    "patientId": "1",
+    "doctorId": "1",
+    "date": "2022-01-01",
+    "time": "10:00 AM"
+  },
+  {
+    "appointmentId": "2",
+    "patientId": "1",
+    "doctorId": "1",
+    "date": "2022-01-01",
+    "time": "10:00 AM"
+  }
 ]
