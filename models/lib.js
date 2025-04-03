@@ -54,10 +54,7 @@ export const readAppointmentData = async () => {
 
 export const writeAppointmentData = async (data) => {
   try {
-    await fs.writeFile(
-      appointmentsDataPath,
-      JSON.stringify(data, null, 2)
-    );
+    await fs.writeFile(appointmentsDataPath, JSON.stringify(data, null, 2));
     return {
       status: "success",
       message: "Appointments data updated successfully",

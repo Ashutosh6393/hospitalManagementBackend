@@ -1,4 +1,3 @@
-import { json } from "express";
 import { readAppointmentData } from "../../models/lib.js";
 
 export const getAppointmentById = async (req, res) => {

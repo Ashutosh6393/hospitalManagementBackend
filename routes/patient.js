@@ -1,10 +1,10 @@
 import { Router } from "express";
 import {
-  addNewPatient,
+  deletePatientById,
   updatePatientById,
   getAllPatients,
   getPatientById,
-  deletePatientById,
+  addNewPatient,
 } from "../controllers/index.js";
 
 const router = Router();

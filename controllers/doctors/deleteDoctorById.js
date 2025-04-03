@@ -4,7 +4,6 @@ export const deleteDoctorById = async (req, res) => {
   const doctorId = req.params.id;
   try {
     const doctors = JSON.parse(await readDoctorData());
-
     const updatedDoctors = doctors.filter(
       (doctor) => doctor.doctorId !== doctorId
     );

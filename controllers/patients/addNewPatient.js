@@ -5,7 +5,6 @@ export const addNewPatient = async (req, res) => {
     let patients = JSON.parse(await readPatientData());
     //validate req.body
     patients.push(req.body);
-    console.log(patients);
     await writePatientData(patients);
     res.status(200).send({ msg: "success" });
   } catch (error) {

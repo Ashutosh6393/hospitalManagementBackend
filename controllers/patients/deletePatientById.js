@@ -4,7 +4,6 @@ export const deletePatientById = async (req, res) => {
   const patientId = req.params.id;
   try {
     const patients = JSON.parse(await readPatientData());
-
     const updatedPatients = patients.filter(
       (patient) => patient.patientId !== patientId
     );

@@ -1,6 +1,5 @@
 import { readAppointmentData } from "../../models/lib.js"
 
-
 export const getAllAppointments = async (req, res) =>{
     try {
         const data = await readAppointmentData();
